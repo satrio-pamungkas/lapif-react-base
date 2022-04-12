@@ -170,6 +170,117 @@ body {
     font-weight: 600;
 }
 
+///////////////
+/* Chatbox */
+//////////////
+
+#chat-section {
+    height: auto;
+    border-bottom: 1px solid #EDEFFF;
+}
+
+.grid-box-chat {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    background-color: transparent;
+    margin: 50px 0px 50px 0px;
+}
+
+.grid-box-chat>div {
+    width: auto;
+}
+
+.chatbot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 32rem;
+
+    .box {
+        border-width: 1px;
+        border-radius: 0.25rem;
+        width: auto;
+
+        .container {
+            position: relative;
+            width: 60%;
+            padding: 1.5rem;
+            overflow-y: scroll;
+            height: 20rem;
+            background-color: rgb(252, 252, 252);
+
+            .our-chat {
+                font-family: Lato, sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                color: white;
+                width: 100%;
+            }
+
+            .response-chat {
+                font-family: Lato, sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                color: white;
+                width: 100%;
+            }
+
+            .our-msg{
+                border-radius: 15px;
+                padding: 10px;
+                color: #fff;
+                box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+                margin: 5px;
+                position: relative;
+                float: right;
+                clear: both;
+                border-top-right-radius: 0px;
+                background: #5157F8;
+                text-align: right;
+            }
+            .our-msg:before{
+                content: "";
+                width: 0px;
+                height: 0px;
+                display: block;
+                border-left: 5px solid #5157F8;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #5157F8;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                top: 0px;
+                right: -10px;
+            }
+
+            .response-msg {                
+                border-radius: 15px;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+                margin: 5px;
+                position: relative;
+                clear: both;
+                float: left;
+                border-top-left-radius: 0px;
+                background: #1cbe3a;
+                text-align: left;
+            }
+            .response-msg:before {
+                content: "";
+                width: 0px;
+                height: 0px;
+                display: block;
+                border-left: 5px solid transparent;
+                border-right: 5px solid #1cbe3a;
+                border-top: 5px solid #1cbe3a;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                top: 0px;
+                left: -10px;
+            }
+        }
+    }
+}
 
 ///////////////
 /* Banner 3 */
