@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { WelcomeHeader } from './components/beranda/WelcomeHeader'
 import { Footer } from './components/commons/Footer'
 import { Navbar } from './components/commons/Navbar'
-import logo from './logo.svg'
+import { Beranda } from './pages/Beranda'
 
 export const App = () => {
     const [count, setCount] = useState(0)
@@ -10,7 +9,7 @@ export const App = () => {
     return (
         <div className="App">
             <Navbar/>
-            <WelcomeHeader/>
+            <Beranda/>
             <Footer/>
         </div>
   )
