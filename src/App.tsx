@@ -1,17 +1,18 @@
 import { useState } from 'react'
-import { Footer } from './components/commons/footer'
-import { Navbar } from './components/commons/navbar'
+import { WelcomeHeader } from './components/beranda/WelcomeHeader'
+import { Footer } from './components/commons/Footer'
+import { Navbar } from './components/commons/Navbar'
 import logo from './logo.svg'
 
-function App() {
+export const App = () => {
     const [count, setCount] = useState(0)
 
     return (
         <div className="App">
             <Navbar/>
+            <WelcomeHeader/>
             <Footer/>
         </div>
   )
 }
 
-export default App

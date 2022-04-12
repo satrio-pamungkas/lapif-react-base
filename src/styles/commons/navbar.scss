@@ -128,19 +128,17 @@
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
+    }
 
-        ul li {
-            height: 40px;   
-        }
-
-        li button {
-            margin-left: 20px;
-        }
-
-        ul.slide {
-            opacity: 1;
-            transform: translate(0);
-        }
+    .navbar ul li {
+        height: 40px;   
+    }
+    .navbar li button {
+        margin-left: 20px;
+    }
+    .navbar ul.slide {
+        opacity: 1;
+        transform: translate(0);
     }
 
     .menu-toggle {
