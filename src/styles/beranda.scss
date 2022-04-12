@@ -207,10 +207,16 @@ body {
             padding: 1.5rem;
             overflow-y: scroll;
             height: 20rem;
-            background-color: rgb(252, 252, 252);
+            background-color: rgb(245, 245, 245);
+            border-radius: 25px;
+
+            ul {
+                list-style-type: none;
+                padding-inline-start: 10px;
+            }
 
             .our-chat {
-                font-family: Lato, sans-serif;
+                font-family: Poppins, sans-serif;
                 font-weight: 400;
                 font-size: 14px;
                 color: white;
@@ -218,7 +224,7 @@ body {
             }
 
             .response-chat {
-                font-family: Lato, sans-serif;
+                font-family: Poppins, sans-serif;
                 font-weight: 400;
                 font-size: 14px;
                 color: white;
@@ -277,6 +283,47 @@ body {
                 position: absolute;
                 top: 0px;
                 left: -10px;
+            }
+        }
+
+        .input-section {
+            display: flex;
+            align-items: center;
+            width: 70%;
+            border-top-width: 0.75rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+
+            .input-box {
+                background-color: rgb(245, 245, 245);
+                border-radius: 25px;
+                font-family: Poppins, sans-serif;
+                font-weight: 400;
+                display: block;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-right: 10px;
+                width: 100%;    
+                height: 32px;
+                border: 0px;
+                outline: none;
+            }
+
+            .btn-send {
+                background-color: #5157F8;
+                border-radius: 25px;
+                color: white;
+                font-family: Poppins, sans-serif;
+                font-weight: 500;
+                width: 35%;
+                height: 32px;
+                border: 0px;
+            }
+
+            .btn-send:hover {
+                background-color: #4146cc;
+                cursor: pointer;
             }
         }
     }
