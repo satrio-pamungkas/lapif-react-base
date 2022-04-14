@@ -5,8 +5,10 @@ import { Chatbox } from "../components/beranda/Chatbox";
 import { CounterStat } from "../components/beranda/CounterStat";
 import { Testimonial } from "../components/beranda/Testimonial";
 import { WelcomeHeader } from "../components/beranda/WelcomeHeader";
+import { API_URL } from "../config";
 
 export const Beranda = () => {
+    console.log(API_URL);
     return (
         <>
             <WelcomeHeader/>
