@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useFetch } from '../../api/useFetch';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, Key } from 'react';
+import htmr from 'htmr';
 
 const chatList: any = [];
 
@@ -47,7 +48,7 @@ export const Chatbox = () => {
 
     useEffect(() => {
         const item: string = value.toString();
-        const data: any = item.split('/');
+        const data: any = item.split('~');
         const newList = listMessage.concat({
             id: uuidv4(),
             message: data[1],
@@ -84,11 +85,14 @@ export const Chatbox = () => {
                             <div className="box">
                                 <div className="container">
                                     <ul>
-                                        {listMessage.map((item: any) => (
+                                        {listMessage.map((item: any) => {
+                                            const messageString: string = (item.message === undefined) ? '' : item.message;
+
+                                            return (
                                             <li key={item.id} className={item.li}>
-                                                <span className={item.span}>{item.message}</span>
-                                            </li>
-                                        ))}
+                                                <span className={item.span}>{htmr(messageString)}</span>
+                                            </li> )
+                                        })}
                                     </ul>
                                     <div ref={scrollRef}></div>
                                 </div>

@@ -34,7 +34,7 @@ export const Testimonial = () => {
                                     </div>
                                 </div>
                                 <div className="row testimonial-react">
-                                    <img className="testimonial-react-icon" src={Smile} alt="smile.svg" />
+                                    <img className="testimonial-react-icon" src={Smile} alt="smile" />
                                     <span>
                                         Recommended</span>
                                 </div>
